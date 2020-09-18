@@ -1,12 +1,16 @@
 package com.daidv.springmvc;
 
+import java.util.Date;
+
 public class Student {
     private Integer id;
     private String name;
     private Integer age;
     private String major;
+    private Date date;
 
     public Student() {
+        this.date = new Date();
     }
 
     public Student(Integer id, String name, Integer age, String major) {
@@ -14,6 +18,7 @@ public class Student {
         this.name = name;
         this.age = age;
         this.major = major;
+        this.date = new Date();
     }
 
     public void setId(Integer id) {
@@ -46,5 +51,13 @@ public class Student {
 
     public String getMajor() {
         return major;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    public Date getDate() {
+        return date;
     }
 }
