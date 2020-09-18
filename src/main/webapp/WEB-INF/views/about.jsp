@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>HELLO</title>
+<title>HOME - ABOUT</title>
 </head>
 <body>
-	<h1>Welcome to Spring MVC</h1>
+	<h1>Page about</h1>
 </body>
 </html>

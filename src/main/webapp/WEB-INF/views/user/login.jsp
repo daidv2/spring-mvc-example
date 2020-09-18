@@ -9,7 +9,7 @@
 <body>
 	<h2>LOGIN</h2>
 	<span style="color: red">${message}</span>
-	<form action="/springmvc/user/login.htm" method="post">
+	<form action="/springmvc/login.htm" method="post">
 		<div>Username</div>
 		<input type="text" name="id">
 

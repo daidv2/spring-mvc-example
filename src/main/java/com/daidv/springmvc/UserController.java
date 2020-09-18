@@ -4,16 +4,17 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import javax.servlet.http.HttpServletRequest;
 import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class UserController {
-    @RequestMapping("user/form")
-    public String showForm() {
+    @RequestMapping(value="login", method=RequestMethod.GET)
+    public String login() {
         return "user/login";
     }
 
-    @RequestMapping("user/login")
-    public String sayHello(ModelMap model, HttpServletRequest request) {
+    @RequestMapping(value="login", method=RequestMethod.POST)
+    public String login(ModelMap model, HttpServletRequest request) {
         String id = request.getParameter("id");
         String pw = request.getParameter("password");
         if (id.equals("daidv") && pw.equals("123")) {
@@ -25,7 +26,6 @@ public class UserController {
         return "user/login";
     }
 
-    @RequestMapping("user/login_bk")
     public String sayHelloBk(HttpServletRequest request) {
         String id = request.getParameter("id");
         String pw = request.getParameter("password");
