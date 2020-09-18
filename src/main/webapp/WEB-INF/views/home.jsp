@@ -8,7 +8,8 @@
 <h1>
 	Hello world!  
 </h1>
-<a href="/springmvc/user/login">Login</a>
+<a href="/springmvc/user/login">Login</a><br>
+<a href="/springmvc/student/edit">Student</a>
 
 <P>  The time on the server is ${serverTime}. </P>
 </body>
